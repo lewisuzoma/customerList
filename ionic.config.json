@@ -1,0 +1,7 @@
+{
+  "name": "customerList",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
