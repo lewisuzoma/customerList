@@ -1,0 +1,42 @@
+<ion-header [translucent]="false" class="ion-no-border bg-transparent">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid id="introContainer" class="ion-padding">
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size="12" size-md="6" size-lg="6">
+        <div style="display: flex; justify-content: center;">
+          <div class="frame" align="center">
+            <div class="shape"></div>
+          </div>
+        </div>
+        <ion-item detail="false" lines="none" class="ion-margin-top ion-padding-top ion-margin-bottom bg-transparent">
+          <ion-label class="ion-text-wrap ion-text-center">
+            <h2 class="fs-22 fw-6">Welcome to lista</h2>
+            <p class="fs-18">View your customer details in a simple app.</p>
+          </ion-label>
+        </ion-item>
+        <br />
+        <br />
+        <br />
+        <br />
+        <ion-button
+          size="large"
+          routerLink="/home"
+          routerDirection="forward"
+          expand="block"
+          color="primary"
+          mode="md"
+          class="no-shadow ion-margin-top"
+        >
+          <span class="fs-14 bold">Continue</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

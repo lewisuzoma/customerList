@@ -1,0 +1,25 @@
+<ion-card-content class="bg-lighter ion-item-border-radius ion-margin"  button>
+  <ion-item lines="none" detail="false" class="ion-no-padding">
+    <label slot="start">
+      <p class="fs-12">Amount</p>
+      <h3>{{customer.amount | currency:'\u20A6'+' ': 'symbol' }}</h3>
+    </label>
+    <label class="m-auto">
+      <p class="fs-12">Return</p>
+      <h3>{{customer.return | currency:'\u20A6'+' ': 'symbol'  }}</h3>
+    </label>
+    <label slot="end">
+      <p class="fs-12">Term</p>
+      <h3>{{customer.term}} {{customer.duration}}</h3>
+    </label>
+  </ion-item>
+  
+  <ion-item lines="none" detail="false" class="ion-no-padding ion-no-margin ion-margin-top">
+    <ion-label slot="start">
+      <p class="fs-12">{{customer.title | titlecase}}</p>
+    </ion-label>
+    <ion-button size="small" slot="end" fill="outline" color="primary" class="no-shadow  ion-no-margin" mode="ios">
+      infuse
+    </ion-button>
+  </ion-item>
+</ion-card-content>

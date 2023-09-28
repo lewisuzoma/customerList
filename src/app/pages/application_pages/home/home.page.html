@@ -1,0 +1,42 @@
+<ion-header [translucent]="false" class="no-shadow ion-no-border">
+  <ion-toolbar color="light">
+    <ion-item lines="none" detail="false">
+      <ion-label>
+        <h2>Welcome, Alexa</h2>
+        <p>{{global.checkTime()}}</p>
+      </ion-label>
+      <ion-icon slot="end" name="notifications-outline"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list-header class="ion-margin-top">
+    <ion-label>Customers</ion-label>
+    <ion-button size="small">See All</ion-button>
+  </ion-list-header>
+  <!-- <app-customer-list></app-customer-list> -->
+  <ion-card-content class="ion-border ion-item-border-radius ion-margin"  *ngFor="let customer of [1,2,3,4,5,6,7,8]">
+    <ion-item lines="none" detail="false" class="ion-no-padding">
+      <label>
+        <h3>Jane Doe</h3>
+        <p class="text-muted">Age: 100 Gender: Male</p>
+      </label>
+    </ion-item>
+    <ion-item lines="none" detail="false" class="ion-no-padding">
+      <ion-button size="small" fill="outline" color="primary" class="no-shadow  ion-no-margin" mode="ios">
+        view details
+      </ion-button>
+      <ion-button size="small" fill="outline" color="danger" class="no-shadow  ion-margin" mode="ios">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card-content>
+  
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small" (click)="openModal('add-new-customer-modal','Add New Customer')">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

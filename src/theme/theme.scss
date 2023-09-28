@@ -1,0 +1,91 @@
+body {
+    -webkit-user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+}
+* ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none !important;
+}
+.fs-10 {
+    font-size: 10px !important;
+}
+.fs-12 {
+    font-size: 12px !important;
+}
+.fs-14 {
+    font-size: 14px !important;
+}
+.fs-16 {
+    font-size: 16px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-22 {
+    font-size: 22px !important;
+}
+.fs-30 {
+    font-size: 30px !important;
+}
+.fs-40 {
+    font-size: 40px !important;
+}
+.fs-50 {
+    font-size: 50px !important;
+}
+.fs-60 {
+    font-size: 60px !important;
+}
+
+
+/* Theme Font Weight */
+.bold {
+    font-weight: 600 !important;
+}
+.fw-4 {
+    font-weight: 400 !important;
+}
+.fw-5 {
+    font-weight: 500 !important;
+}
+.fw-6 {
+    font-weight: 600 !important;
+}
+.fw-7 {
+    font-weight: 700 !important;  
+}
+.fw-normal {
+    font-weight: normal !important;
+}
+
+.text-muted {
+    color: #aaa !important;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+    --box-shadow: none !important;
+}
+
+.bg-transparent, .bg-transparent * {
+    background: transparent !important;
+	--background: transparent !important;
+}
+
+.ion-border {
+    border: 2.5px solid var(--ion-color-light) !important;
+    --border: 2.5px solid var(--ion-color-light) !important;
+}
+.ion-border-secondary {
+    border: 1.5px solid var(--ion-color-secondary) !important;
+    --border: 1.5px solid var(--ion-color-secondary) !important;
+}
+.ion-item-border-radius {
+    border-radius: 10px !important;
+    --border-radius: 10px !important;
+}
