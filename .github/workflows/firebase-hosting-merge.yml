@@ -19,7 +19,6 @@ jobs:
         run: |
           ionic cap add android
           ionic cap sync android --prod --minifyjs --minifycss --optimizejs --release --aot
-          npm run resources
           cd android && ./gradlew assembleDebug && cd ../
 
       - name: 'Upload and distribute android app using firebase'
