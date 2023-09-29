@@ -15,10 +15,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
             java-version: '17'
-            distribution: 'adopt'
-            cache: maven
-      - name: Build with maven
-        run: mvn --batch-mode --update-snapshots package
+            distribution: 'temurin'
+            architecture: x64
       - run: |
           npm i -g @ionic/cli @capacitor/cli @capacitor/core @angular/cli cordova-res firebase-tools
           npm i --force
