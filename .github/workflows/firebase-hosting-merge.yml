@@ -30,8 +30,8 @@ jobs:
       - name: 'Upload and distribute android app using firebase'
         run: |
           firebase appdistribution:distribute ./android/app/build/outputs/apk/debug/app-debug.apk  \
-          --token '${{ secrets.FIREBASE_TOKEN  }}'
-          --app '${{ secrets.FIREBASE_APP_ID }}'
+          --token 1//03G51g1PvyiE2CgYIARAAGAMSNwF-L9Ir0_3hCqzjh0NGwtODj28isdJ23v-RnDZ6aLrFh0JSceUirhK0_jJNkgRYjvPe3oPkw0U  \
+          --app 1:430101129929:android:0a3bc7689779243c35bb18  \
           --release-notes "Design Build" 
           --testers "boblewisu@gmail.com"
 
