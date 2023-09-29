@@ -31,7 +31,7 @@ jobs:
         run: |
           firebase appdistribution:distribute ./android/app/build/outputs/apk/debug/app-debug.apk  \
           --token '${{ secrets.GITHUB_TOKEN }}'
-          --app 1:430101129929:android:0a3bc7689779243c35bb18 \
+          --app 1:430101129929:android:0a3bc7689779243c35bb18
           --release-notes "Design Build" 
           --testers "boblewisu@gmail.com"
 
